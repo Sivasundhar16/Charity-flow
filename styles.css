@@ -1028,3 +1028,9 @@ body {
 .makeh3cursor h3 {
   cursor: pointer;
 }
+
+@media (max-width: 425px) {
+  .topdiv {
+    flex-direction: column;
+  }
+}

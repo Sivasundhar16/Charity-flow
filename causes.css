@@ -1,0 +1,263 @@
+/* Reset styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eee6e6;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #391d47; Fixed: Added background */
+  padding: 15px 50px;
+}
+
+/* Logo Styling */
+.logo img {
+  height: 50px;
+  border-radius: 30px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black; /* Fixed: Ensuring contrast */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: orange;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white; /*Fixed: Darker background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 220px;
+  border-radius: 10px;
+  padding: 10px 0;
+  z-index: 100;
+  list-style: none;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu a {
+  color: black; /* Fixed: Better visibility */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  color: orange;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Donate Button */
+.donate-btn {
+  background-color: #e7b251;
+  color: #300530;
+  padding: 25px 40px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.donate-btn span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.donate-btn:hover span {
+  transform: scaleX(-1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    position: relative;
+  }
+}
+
+.ourcauses {
+  color: black;
+  background-color: #e6b965;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  height: 200px;
+  margin-top: 80px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* causes imgages part */
+
+.makecausesgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+.makecausesgrid img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.firstheadingcauses {
+  padding-left: 10px;
+  width: 400px;
+}
+
+.makeflextwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: blueviolet; */
+}
+
+.custom-hr1 {
+  width: 60%;
+  height: 5px;
+  background-color: #300530;
+  border: none;
+  margin: 0;
+}
+
+.makeflextwo h3 {
+  /* margin: 0; */
+  /* padding-left: 10px; */
+  color: black;
+  margin-right: 40px;
+}
+
+.firstparacauses {
+  padding: 10px;
+  font-size: 20px;
+  color: #0000007c;
+}
+
+.goaldiv {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.goaldiv h4 {
+  margin-bottom: 0;
+  color: #00000083;
+}
+
+.goaldiv h1 {
+  margin-top: 10px;
+}
+
+.raisedblue {
+  color: #ec5fec;
+}
+
+.makebuttoncenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstinnercause img {
+  width: 500px;
+  height: auto;
+}
+.makeimagecenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-hr2 {
+  width: 80%;
+  height: 5px;
+  background-color: #300530;
+  border: none;
+  margin: 0;
+}
+
+.custom-hr3 {
+  width: 50%;
+  height: 5px;
+  background-color: #300530;
+  border: none;
+  margin: 0;
+}
+
+.custom-hr4 {
+  width: 80%;
+  height: 5px;
+  background-color: #300530;
+  border: none;
+  margin: 0;
+}
+
+.custom-hr5 {
+  width: 80%;
+  height: 5px;
+  background-color: #300530;
+  border: none;
+  margin: 0;
+}
+
+.custom-hr6 {
+  width: 40%;
+  height: 5px;
+  background-color: #300530;
+  border: none;
+  margin: 0;
+}
